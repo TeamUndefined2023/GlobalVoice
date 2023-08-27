@@ -1,12 +1,14 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Webcam from "react-webcam";   //npm install react-webcam
 import "../styles/main.css";
+import img from '../assets/chatbox.png';
 import peer from "../service/peer";
 import sound from "../assets/sound.png";
 import send from "../assets/send.png";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useSocket } from "../context/SocketProvider";
 import ReactPlayer from 'react-player';
+
 const Main = ({userName}) => {
   // const [projectName,setProjectName]=useState('myprojectName');
   const webCamRef=React.useRef(null);
@@ -165,7 +167,7 @@ const Main = ({userName}) => {
           </div>
           <div className="right">
             <h1 className="head">Chats</h1>
-            <div className="oldchat"></div>
+            <div className="oldchat"><img src={img} alt="nothing to show" /></div>
             <div className="curr_chat">
               <input placeholder="type a message" type="text" />
               <button className="send">

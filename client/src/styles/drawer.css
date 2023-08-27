@@ -76,3 +76,12 @@
 .icon:hover {
     color: #8547d3;
 }
+
+
+
+/* media queries */
+@media screen and (max-width:1375px){
+    #name{
+        font-size: 20px;
+    }
+}
