@@ -111,7 +111,7 @@
     flex-direction: row;
 }
 .videobig {
-    width: 50vw;
+    width: 48.3vw;
     height:77.5vh;
     position: relative;
     background-color: #F5F5FD;
@@ -170,7 +170,7 @@
     font-size: 18px;
 }
 .right {
-    width: 22vw;
+    width: 22.5vw;
     height: 77.5vh;
     background-color: #F5F5FD;
     margin-top: 20px;
