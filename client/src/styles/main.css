@@ -1,14 +1,15 @@
 #bg{
     width: 85vw;
-    background-color: #2E2C54;
+    background: linear-gradient(91.3deg, rgb(135, 174, 220) 1.5%, rgb(255, 255, 255) 100.3%);
     align-items: center;
     display: flex;
     flex-direction: column;
+    
 }
 .heading{
-    width: 77vw;
-    background-color: #393760;
-    height: 10vh;
+    width: 72vw;
+    background-color: #F5F5FD;
+    height: 8vh;
     margin-top: 20px;
     border-radius: 20px;
     display: flex;
@@ -17,18 +18,19 @@
 
 }
 .heading .title{
-    width: 35vw;
-    background-color: #4D4B70;
-    color: white;
-    height: 7vh;
+    width: 30vw;
+    background-color: #E9E9FA;
+    color: #17171F;
+    font-family: Inter;
+    height: 5vh;
     margin: 5px 5px ;
     border-radius: 10px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 25px;
-    font-size: 25px;
+    margin-left: 20px;
+    font-size: 20px;
 }
 .circle {
     background-color: red;
@@ -108,7 +110,7 @@
     width: 50vw;
     height:81vh;
     position: relative;
-    background-color: #393760;
+    background-color: #F5F5FD;
     margin: 20px 0px;
     border-radius: 20px;
     display: flex;
@@ -164,9 +166,9 @@
     font-size: 18px;
 }
 .right {
-    width: 23vw;
+    width: 22vw;
     height: 81vh;
-    background-color: #393760;
+    background-color: #F5F5FD;
     margin-top: 20px;
     margin-left: 18px;
     border-radius: 28px;
@@ -185,29 +187,93 @@
     display: none;      /* chatbox head gone*/
 }
 .oldchat {
-    width: 21vw;
+    width: 21.3vw;
     height: 69vh;
-    border-radius: 21px;
+    border-radius: 18px;
     margin-top: 14px;
 }
-.oldchat img{
-    width: 100%;
-    height: 100%;
-}
+
+.swich {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    display: inline-flex;
+    gap: 2px;
+    justify-content: center;
+    padding: 8px;
+    position: relative;
+    margin-top: 0px;
+    
+  }
+  
+  .swich .group {
+    height: 32px;
+    position: relative;
+    width: 137px;
+  }
+  
+  .swich .overlap-group {
+    background-color: #8871e6;
+    border-radius: 6px;
+    height: 32px;
+    position: relative;
+    width: 135px;
+  }
+  
+  .swich .text-wrapper {
+    color: #ffffff;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    left: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 6px;
+    white-space: nowrap;
+  }
+  
+  .swich .overlap-wrapper {
+    height: 32px;
+    margin-right: -2px;
+    position: relative;
+    width: 136px;
+  }
+  
+  .swich .overlap {
+    background-color: #fff;
+    border-radius: 6px;
+    height: 32px;
+    position: relative;
+    width: 134px;
+  }
+  
+  .swich .div {
+    color: #BCBCD3;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 6px;
+    white-space: nowrap;
+  }
 .curr_chat {
     margin-top: 8px;
     margin-bottom: 10px;
     display: flex;
     justify-content: flex-start;
-    background-color: #2E2C54;
+    background-color: #FFFFFF;
     border-radius: 14px;
 }
 .curr_chat input {
-    width: 18vw;
-    height: 7vh;
+    width: 16vw;
+    height: 5vh;
     border-radius: 10px;
     padding: 1px 8px;
-    background-color: #2E2C54;
+    background-color: #FFFFFF;
     color: white;
     font-size: 17px;
     margin: 2px;
@@ -217,7 +283,7 @@
 }
 .curr_chat img{
     width: 2.5vw;
-    height: 6vh;
+    height: 5vh;
     border-radius: 7px;
     margin-left: 4px;
     margin-right: 4px;

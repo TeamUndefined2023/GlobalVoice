@@ -167,7 +167,20 @@ const Main = ({userName}) => {
           </div>
           <div className="right">
             <h1 className="head">Chats</h1>
-            <div className="oldchat"><img src={img} alt="nothing to show" /></div>
+            <div className="oldchat">
+            <div className="swich">
+      <div className="group">
+        <div className="overlap-group">
+          <div className="text-wrapper">Messages</div>
+        </div>
+      </div>
+      <div className="overlap-wrapper">
+        <div className="overlap">
+          <div className="div">Participants</div>
+        </div>
+      </div>
+    </div>
+    </div>
             <div className="curr_chat">
               <input placeholder="type a message" type="text" />
               <button className="send">
