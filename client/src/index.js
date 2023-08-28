@@ -9,19 +9,19 @@ import { SocketProvider } from './context/SocketProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+    <Auth0Provider
+        domain="dev-6n7v64ilef2u153e.us.auth0.com"
+        clientId="TYjM6kuV8sePoi6Kwae2clhxTwxwJcqQ"
+        authorizationParams={{
+          redirect_uri: "http://localhost:3000"    }}
+      >
+    <React.StrictMode>
     <SocketProvider>
       <App />
     </SocketProvider>
   </React.StrictMode>
+  </Auth0Provider>,
 );
   
   // reportWebVitals();
-  {/* <Auth0Provider
-      domain="dev-6n7v64ilef2u153e.us.auth0.com"
-      clientId="TYjM6kuV8sePoi6Kwae2clhxTwxwJcqQ"
-      authorizationParams={{
-        redirect_uri: "https://videocall-kappa.vercel.app"    }}
-    > */}
-  // </Auth0Provider>,
   

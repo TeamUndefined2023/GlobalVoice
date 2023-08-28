@@ -24,15 +24,15 @@ function Drawercontent(props){
   const { logout } = useAuth0();
 
   return (
-      <i class="fa-solid fa-circle-xmark fa-2xl icon"  onClick={() => logout({ logoutParams: { returnTo:"https://videocall-kappa.vercel.app" } })}></i>
+      <i class="fa-solid fa-circle-xmark fa-2xl icon"  onClick={() => logout({ logoutParams: { returnTo:"http://localhost:3000" } })}></i>
 
   );
 };
 function Exit(props){
   return (
     <div className="exit">
-    <i class="fa-solid fa-circle-xmark fa-2xl icon"></i>
-    {/* <LogoutButton/> */}
+    {/* <i class="fa-solid fa-circle-xmark fa-2xl icon"></i> */}
+    <LogoutButton/>
     </div>);
 }
 

@@ -9,20 +9,19 @@ import Lobby from './components/Lobby';
 import { useState } from "react";
 
 function App() {
-  const [name,setname]=useState("_");
-  // const {user,isAuthenticated,isLoading}=useAuth0();
-  // if(!isAuthenticated){
-  //   return <LoginButton/>;
-  // }
-  // else if(isLoading){
-  //   return <div>Loading..</div>;
-  // }
+  const {user,isAuthenticated,isLoading}=useAuth0();
+  if(!isAuthenticated){
+    return <LoginButton/>;
+  }
+  else if(isLoading){
+    return <div>Loading..</div>;
+  }
   return (
     <Router >
         <Drawer></Drawer>
         <Routes>
-          <Route path="/" element={<Lobby setname={setname}/>}/>
-          <Route path="/room/:roomId" element={<Main userName={name}/>}/>
+          <Route path="/" element={<Lobby userEmail={user.email}/>}/>
+          <Route path="/room/:roomId" element={<Main userName={user.name}/>}/>
           <Route path="/Guide" element={<Guide/>}/>
         </Routes> 
     </Router>
