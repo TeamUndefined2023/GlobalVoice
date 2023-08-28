@@ -1,8 +1,8 @@
 🤩About The Project🤠
 
-Use Case: Empowering Mute persion with Global Voice Video Calling Web App 🌟
+Use Case: Empowering  persons who can't talk with Global Voice Video Calling Web App 🌟
 
-Introducing Global Voice, the revolutionary video calling web app tailored to empower mute individuals. At its core, Global Voice is driven by the promise of gesture-enhanced communication – a groundbreaking feature that enables a more expressive and immersive way of connecting. 💪
+Introducing Global Voice, the revolutionary video calling web app tailored to empower and bridge the gap of communication between individuals who can't talk . At its core, Global Voice is driven by the promise of gesture-enhanced communication – a groundbreaking feature that enables a more expressive and immersive way of connecting. 💪
 
 ## Global Voice Web App: Overview 🌐🗣️
 
@@ -18,9 +18,18 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
    Solution: Our dedicated team invested significant effort in refining the gesture recognition algorithms. Rigorous testing, meticulous data collection, and precision fine-tuning led us to achieve exceptional accuracy. Collaborating with gesture recognition experts further enriched our solution.
 
 ## 💻 Built With
-
+      auth0 - to authenticate users
       React -  For crafting a seamless and dynamic frontend UI.
       WebSocket - Enabling real-time, bidirectional communication between clients and the server.
       WebRTC - Facilitating top-notch real-time audio and video interactions.
       TensorFlow - Elevating gesture recognition accuracy and responsiveness.
       Flask -  Backing our machine learning model integration for gesture recognition.
+
+
+## to run in your local machine , install the dependencies:
+  #server:
+   npm i socket.io
+  #client:
+   npm i
+   npm i socket.io-client
+   npm install @auth0/auth0-react
