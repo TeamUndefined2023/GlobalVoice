@@ -1,0 +1,4 @@
+websockets
+numpy
+scikit-image
+tensorflow
