@@ -27,9 +27,9 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
 
 
 ## to run in your local machine , install the dependencies:
-  #server:
+# server:
    npm i socket.io
-  #client:
+# client:
    npm i
    npm i socket.io-client
    npm install @auth0/auth0-react
