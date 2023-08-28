@@ -21,10 +21,11 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
   ## Video Demo of our Project :
     https://youtu.be/HRch__wnf_o?si=Az3jvHMeiCZTNBDV
 # Challenges We Ran Into 🔍🚧
-      Challenge : Our team faced difficulties in working with webRTC and socket.io , as these technologies were completely new to us and we have to read numerous documentations and go through many tutorials to                     implement it in our project
-      Solution : Our problem solving ability helped us to solve bugs and resolves issues we developed till now , and to implement and made a fully functional video calling app
-      Challenge: our team faced difficulties in integrating ml model to webRTC and socket io
-      Solution: Our dedicated team invested significant effort in refining the gesture recognition algorithms. Rigorous testing, meticulous data collection, and precision fine-tuning led us to achieve    
+    .Challenge : Our team faced difficulties in working with webRTC and socket.io , as these technologies were completely new to us and we have to read numerous documentations and go through many tutorials to                     implement it in our project
+     Solution : Our problem solving ability helped us to solve bugs and resolves issues we developed till now , and to implement and made a fully functional video calling app
+     
+    .Challenge: our team faced difficulties in integrating ml model to webRTC and socket io
+     Solution: Our dedicated team invested significant effort in refining the gesture recognition algorithms. Rigorous testing, meticulous data collection, and precision fine-tuning led us to achieve    
                 exceptional accuracy. Collaborating with gesture recognition experts further enriched our solution.
 
 # 💻 Built With
