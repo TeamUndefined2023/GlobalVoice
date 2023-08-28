@@ -1,6 +1,6 @@
-# 🤩About The Project🤠
+# GLOBAL VOICE
 
-Use Case: Empowering  persons who can't talk with Global Voice Video Calling Web App 🌟
+Use Case: Empowering Specialy abled persion with the global-voive 🌟
 
 Introducing Global Voice, the revolutionary video calling web app tailored to empower and bridge the gap of communication between individuals who can't talk and the persons who can talk  . At its core, Global Voice is driven by the promise of gesture-enhanced communication – a groundbreaking feature that enables a more expressive and immersive way of connecting. 💪
 
@@ -24,6 +24,12 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
       WebRTC - Facilitating top-notch real-time audio and video interactions.
       TensorFlow - Elevating gesture recognition accuracy and responsiveness.
       Flask -  Backing our machine learning model integration for gesture recognition.
+
+      Team Members: 
+      .Raja 
+      .Saif Hussain
+      .Subhomay Sarkar
+      .Sinjini
 
 
 ## to run in your local machine , install the dependencies:
