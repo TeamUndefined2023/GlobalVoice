@@ -1,0 +1,87 @@
+.drawer-main{
+    height: 100vh;
+    width: 15vw;
+    background-color: #242247;
+}
+#name {
+    text-transform: capitalize;
+    color: #8547d3;
+    font-size: 35px;
+    padding: 11px 0px 0px 4px;
+    font-weight: bold;
+}
+.drawer-content {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+.btn{
+    width: 15vw;
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.selectedBtn{
+    font-size: 24px;
+}
+.selectedBtn .icon{
+    color: #8547d3;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+.selectedBtn .icon:hover{
+    color: white;
+}
+
+/* .selectedBtn .sideAnim .navCircle{
+    width: 13px;
+    height: 13px;
+    background-color: purple;
+    border-radius: 30px;
+} */
+
+.selectedBtn .sideAnim {        
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.unselected .sideAnim{
+    visibility: hidden;
+}
+
+.exit{
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.exit button{
+    width: 40px;
+    height: 40px;
+}
+
+
+/* for icons imported from fontawesome , add this className : "icon" */
+.icon{
+    color: rgb(255, 255, 255);
+}
+.icon:hover {
+    color: #8547d3;
+}
+
+
+
+/* media queries */
+@media screen and (max-width:1375px){
+    #name{
+        font-size: 20px;
+    }
+}
