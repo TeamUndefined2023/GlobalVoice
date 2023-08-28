@@ -18,9 +18,11 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
    ![WhatsApp Image 2023-08-28 at 08 54 22](https://github.com/TeamUndefined2023/globalvoice/assets/93094139/aaced96b-873f-46da-ac75-ad5e44183ddd)
 
 # Challenges We Ran Into 🔍🚧
- 
-   Challenge: our team faced difficulties in integrating ml model to webRTC and socket io
-   Solution: Our dedicated team invested significant effort in refining the gesture recognition algorithms. Rigorous testing, meticulous data collection, and precision fine-tuning led us to achieve exceptional accuracy. Collaborating with gesture recognition experts further enriched our solution.
+      Challenge : Our team faced difficulties in working with webRTC and socket.io , as these technologies were completely new to us and we have to read numerous documentations and go through many tutorials to                     implement it in our project
+      Solution : Our problem solving ability helped us to solve bugs and resolves issues we developed till now , and to implement and made a fully functional video calling app
+      Challenge: our team faced difficulties in integrating ml model to webRTC and socket io
+      Solution: Our dedicated team invested significant effort in refining the gesture recognition algorithms. Rigorous testing, meticulous data collection, and precision fine-tuning led us to achieve    
+                exceptional accuracy. Collaborating with gesture recognition experts further enriched our solution.
 
 # 💻 Built With
       auth0 - to authenticate users
@@ -43,4 +45,8 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
   # Client:
         npm i
         npm install @auth0/auth0-react
+        npm i react-router-dom
+        npm i react-dom/client
+        npm i react-router-dom
+        npm i react-player
         
