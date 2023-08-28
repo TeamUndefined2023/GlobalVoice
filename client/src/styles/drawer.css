@@ -1,7 +1,7 @@
 .drawer-main{
     height: 100vh;
     width: 15vw;
-    background: linear-gradient(to top, rgb(12, 52, 131) 0%, rgb(162, 182, 223) 100%, rgb(107, 140, 206) 100%, rgb(162, 182, 223) 100%);
+    background-color: #131391;
 }
 #name {
     text-transform: capitalize;
@@ -48,12 +48,13 @@
     border-radius: 30px;
 } */
 
-.selectedBtn .sideAnim {        
+.selectedBtn .sideAnim{        
     width: 15%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right:-5px;
 }
 .unselected .sideAnim{
     visibility: hidden;

@@ -5,6 +5,7 @@ import img from '../assets/chatbox.png';
 import peer from "../service/peer";
 import sound from "../assets/sound.png";
 import send from "../assets/send.png";
+import call from "../assets/call.png";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useSocket } from "../context/SocketProvider";
 import ReactPlayer from 'react-player';
@@ -129,7 +130,7 @@ const Main = ({userName}) => {
         </div> */}
         <div className="leave">
         {myStream && <button className="sendStream" onClick={sendStreams}>Send Stream</button>}
-        {remoteSocketId && <button className="call"   onClick={handleCallUser}>CALL</button>}
+        {remoteSocketId && <button className="call"   onClick={handleCallUser}><img src={call} alt="call" id="call" /></button>}
         </div>
       </div>
       <div className="body">
