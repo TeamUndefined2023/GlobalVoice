@@ -1,5 +1,4 @@
 # GLOBALVOICE
-
  ## Use Case: Empowering Specialy abled persion with the global-voive 🌟
    Introducing Global Voice, the revolutionary video calling web app tailored to empower and bridge the gap of communication between individuals who can't talk and the persons who can talk  . At its core, Global 
    Voice is driven by the promise of gesture-enhanced communication – a groundbreaking feature that enables a more expressive and immersive way of connecting. 💪
