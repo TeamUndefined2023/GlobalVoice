@@ -39,8 +39,8 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
 
 # to run in your local machine , install the dependencies in the respective directories:
   # server:
-   .npm i socket.io
-  # client:
-   .npm i
-   .npm i socket.io-client
-   .npm install @auth0/auth0-react
+        npm i socket.io
+  # Client:
+        npm i
+        npm install @auth0/auth0-react
+        
