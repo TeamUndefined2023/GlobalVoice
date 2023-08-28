@@ -1,14 +1,16 @@
 .drawer-main{
     height: 100vh;
     width: 15vw;
-    background-color: #242247;
+    background-color: #131391;
 }
 #name {
     text-transform: capitalize;
-    color: #8547d3;
+    color: #FFFF;
     font-size: 35px;
     padding: 11px 0px 0px 4px;
     font-weight: bold;
+    margin-left: 23px;
+    
 }
 .drawer-content {
     display: flex;
@@ -30,13 +32,13 @@
     font-size: 24px;
 }
 .selectedBtn .icon{
-    color: #8547d3;
+    color: #ffff;
     width: 85%;
     display: flex;
     justify-content: center;
 }
 .selectedBtn .icon:hover{
-    color: white;
+    color:#BCBCD3 ;
 }
 
 /* .selectedBtn .sideAnim .navCircle{
@@ -46,12 +48,13 @@
     border-radius: 30px;
 } */
 
-.selectedBtn .sideAnim {        
+.selectedBtn .sideAnim{        
     width: 15%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right:-5px;
 }
 .unselected .sideAnim{
     visibility: hidden;
@@ -71,10 +74,10 @@
 
 /* for icons imported from fontawesome , add this className : "icon" */
 .icon{
-    color: rgb(255, 255, 255);
+    color: #BCBCD3;
 }
 .icon:hover {
-    color: #8547d3;
+    color: #ffff;
 }
 
 

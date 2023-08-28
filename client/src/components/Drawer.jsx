@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { HashLink } from 'react-router-hash-link';
 import '../styles/drawer.css';
+import navicon from '../assets/nav_anim.png';
 import img from '../assets/navanim.png'
 import { useAuth0 } from "@auth0/auth0-react";
 function Drawercontent(props){
@@ -14,9 +15,9 @@ function Drawercontent(props){
   },[target]);
   return(
     <div className="drawer-content">
-        <HashLink to={'/#Lobby'}  className={target==='lobbyBtn'? 'selectedBtn btn':'unselected btn'} id='lobbyBtn' onClick={()=>setBtnBg('lobbyBtn')}><i class="fa-solid fa-right-to-bracket fa-2xl icon" ></i> <img src={img} className="sideAnim"alt="" /></HashLink>
+        <HashLink to={'/#Lobby'}  className={target==='lobbyBtn'? 'selectedBtn btn':'unselected btn'} id='lobbyBtn' onClick={()=>setBtnBg('lobbyBtn')}><i class="fa-solid fa-right-to-bracket fa-2xl icon" ></i> <img src={navicon} className="sideAnim"alt="" /></HashLink>
         {/* <HashLink to={'/Main'}  className={target==='videoBtn'? 'selectedBtn btn':'unselected btn'} id='videoBtn' onClick={()=>setBtnBg('videoBtn')}><i class="fa-solid fa-video fa-2xl icon" ></i> <img src={img} className="sideAnim"alt="" /></HashLink> */}
-        <HashLink to={'/Guide'} className={target==='guideBtn'? 'selectedBtn btn':'unselected btn'} id='guideBtn'  onClick={()=>setBtnBg('guideBtn')}><i class="fa-solid fa-book fa-2xl icon"></i> <img src={img} className="sideAnim"alt="" /></HashLink>
+        <HashLink to={'/Guide'} className={target==='guideBtn'? 'selectedBtn btn':'unselected btn'} id='guideBtn'  onClick={()=>setBtnBg('guideBtn')}><i class="fa-solid fa-book fa-2xl icon"></i> <img src={navicon} className="sideAnim"alt="" /></HashLink>
         {/* <i class="fa fa-solid fa-house" style={{color: 'white',}}></i> */}
       </div>);
 }const LogoutButton = () => {
