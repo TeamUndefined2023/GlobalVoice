@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { HashLink } from 'react-router-hash-link';
 import '../styles/drawer.css';
 import navicon from '../assets/nav_anim.png';
-import img from '../assets/navanim.png'
+import logo from '../assets/logo.png'
 import { useAuth0 } from "@auth0/auth0-react";
 function Drawercontent(props){
   const[target,setTarget]=useState(sessionStorage.getItem('target') || 'lobbyBtn');
@@ -41,7 +41,7 @@ const Drawer = () => {
   return (
     <>
     <div className="drawer-main">
-        <h1 id="name">GlobalVoice</h1>
+        <h1 id="name"><img src={logo} alt="logo" /></h1>
         <Drawercontent/>
         <Exit/>
     </div>
