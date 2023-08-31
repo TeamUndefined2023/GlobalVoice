@@ -1,18 +1,21 @@
 import React, { useCallback, useEffect, useState } from "react";
-import Webcam from "react-webcam";   //npm install react-webcam
+import Webcam from "react-webcam"; //npm install react-webcam
 import "../styles/main.css";
-import img from '../assets/chatbox.png';
+import img from "../assets/chatbox.png";
 import peer from "../service/peer";
 import sound from "../assets/sound.png";
 import send from "../assets/send.png";
 import call from "../assets/call.png";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useSocket } from "../context/SocketProvider";
-import ReactPlayer from 'react-player';
-
-const Main = ({userName}) => {
+import ReactPlayer from "react-player";
+import offCall from "../assets/offCall.png";
+import gm1 from "../assets/gmeet.png";
+import gm2 from "../assets/gmeet1.png";
+import gm3 from "../assets/gmeet2.png";
+const Main = ({ userName }) => {
   // const [projectName,setProjectName]=useState('myprojectName');
-  const webCamRef=React.useRef(null);
+  const webCamRef = React.useRef(null);
   const socket = useSocket();
   const [remoteSocketId, setRemoteSocketId] = useState(null);
   const [myStream, setMyStream] = useState();
@@ -120,75 +123,59 @@ const Main = ({userName}) => {
 
   return (
     <div id="bg">
-      <div className="heading">
-        <div className="title">
-          <span>Welcome {userName}</span>
-        </div>
-        {/* <div className="time">
-          <div className="circle"></div>
-          <span>5</span>
-        </div> */}
-        <div className="leave">
-        {myStream && <button className="sendStream" onClick={sendStreams}>Send Stream</button>}
-        {remoteSocketId && <button className="call"   onClick={handleCallUser}><img src={call} alt="call" id="call" /></button>}
-        </div>
-      </div>
       <div className="body">
-          <div className="left">
-            <div className="videobig">
-              {/* <Webcam  className="userCam" audio={true} ref={webCamRef} mirrored={true}/> */}
-              {remoteStream && (
+        <div className="left">
+          <div className="videobig">
+            {/* <Webcam  className="userCam" audio={true} ref={webCamRef} mirrored={true}/> */}
+            {remoteStream && (
+              <>
+                <ReactPlayer
+                  playing
+                  muted
+                  height="100%"
+                  width="100%"
+                  url={remoteStream}
+                />
+              </>
+            )}
+            <div className="videosmall">
+              {myStream && (
                 <>
                   <ReactPlayer
                     playing
                     muted
                     height="100%"
                     width="100%"
-                    url={remoteStream}
+                    url={myStream}
                   />
                 </>
               )}
-              <div className="videosmall">
-                {myStream && (
-                  <>
-                    <ReactPlayer
-                      playing
-                      muted
-                      height='100%'
-                      width="100%"
-                      url={myStream}
-                    />
-                  </>
-                )}
-              </div>
             </div>
-            {/* <div className="subtitle">
+          </div>
+          {/* <div className="subtitle">
               <div className="sound"><img src={sound} alt="notfound" /></div><span className="text">Subtitles..</span>
             </div> */}
-          </div>
-          <div className="right">
-            <h1 className="head">Chats</h1>
-            <div className="oldchat">
-            <div className="swich">
-      <div className="group">
-        <div className="overlap-group">
-          <div className="text-wrapper">Messages</div>
         </div>
-      </div>
-      <div className="overlap-wrapper">
-        <div className="overlap">
-          <div className="div">Participants</div>
-        </div>
-      </div>
-    </div>
-    </div>
-            <div className="curr_chat">
-              <input placeholder="type a message" type="text" />
-              <button className="send">
-              <img src={send} alt="404 error" />
-              </button>
+        <div className="right">
+          <div className="heading">
+            <div className="title">
+              <span>Welcome {userName}</span>
+            </div>
+            {/* <div className="time">
+              <div className="circle"></div>
+              <span>5</span>
+            </div> */}
+            <div className="leave">
+            {(myStream)? <button className="sendStream" onClick={sendStreams}>Send Stream</button> :<button className="offSendStream" >Send Stream</button> }
+            {(remoteSocketId)? <button className="call"   onClick={handleCallUser}><img src={call} alt="call" id="call" /></button> :<button className="offCall" ><img src={offCall} alt="call" id="offCall" /></button>}
             </div>
           </div>
+          <div className="participants">
+            <div className="p"><img src={gm1} alt="no participants" /></div>
+            <div className="p"><img src={gm2} alt="no participants" /></div>
+            <div className="p"><img src={gm3} alt="no participants" /></div>
+          </div>
+        </div>
       </div>
     </div>
   );
