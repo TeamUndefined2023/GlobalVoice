@@ -41,7 +41,7 @@ const Drawer = () => {
   return (
     <>
     <div className="drawer-main">
-        <h1 id="name"><img src={logo} alt="logo" /></h1>
+        <img src={logo} className="logo "alt="logo" />
         <Drawercontent/>
         <Exit/>
     </div>
