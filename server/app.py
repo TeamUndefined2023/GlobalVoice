@@ -3,9 +3,14 @@ import numpy as np
 import mediapipe as mp
 import skimage.transform
 from tensorflow.keras.models import load_model
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
+from flask_socketio import SocketIO, emit
+from flask_cors import CORS
+import base64
 
 app = Flask(__name__)
+CORS(app)  # Allow CORS for all routes
+socketio = SocketIO(app, cors_allowed_origins='*')
 
 # Load your trained model
 model = load_model('../model/ASL.h5')
@@ -28,11 +33,14 @@ mp_hands = mp.solutions.hands
 hands = mp_hands.Hands()
 
 # API endpoint for predicting ASL gesture
-@app.route('/predict_asl', methods=['POST'])
-def predict_asl():
+# @app.route('/predict_asl', methods=['POST'])
+# def predict_asl():
+@socketio.on('send_frame')
+def handle_frame(data):
     try:
         # Get image data from POST request
-        image_data = request.files['image'].read()
+        image_data = base64.b64decode(data['image'])  # Decode base64 to bytes
+        print('img', image_data)
         nparr = np.frombuffer(image_data, np.uint8)
         frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
@@ -56,10 +64,18 @@ def predict_asl():
 
         # Return the predicted word
         response = {'predicted_word': predicted_label}
-        return jsonify(response)
+        # return jsonify(response)
+        socketio.emit('predicted_word', response)
     except Exception as e:
         print('error', e)
-        return jsonify({'error': str(e)})
+        # return jsonify({'error': str(e)})
+
+
+@socketio.on('connect')
+def handle_connect():
+    print('Client connected')
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # app.run(debug=True, host='0.0.0.0', port=5000)
+    socketio.run(app, debug=True, host='0.0.0.0', port=5000)
+

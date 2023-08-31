@@ -1,30 +1,49 @@
-import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
-import Main from "./components/Main";
-import Drawer from "./components/Drawer";
-import Guide from "./components/Guide";
-import './styles/app.css';
-import { useAuth0 } from "@auth0/auth0-react";
-import LoginButton from "./components/LoginButton";
-import Lobby from './components/Lobby';
+import React, { useRef, useEffect, useState } from 'react';
+import io from 'socket.io-client';
 
 function App() {
-  // const {user,isAuthenticated,isLoading}=useAuth0();
-  // if(!isAuthenticated){
-  //   return <LoginButton/>;
-  // }
-  // else if(isLoading){
-  //   return <div>Loading..</div>;
-  // }
+  const videoRef = useRef(null);
+  const [socket, setSocket] = useState(null);
+  const [predictedWord, setPredictedWord] = useState('');
+
+  useEffect(() => {
+    // Initialize video stream
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => videoRef.current.srcObject = stream)
+      .catch(error => console.error('Error accessing camera:', error));
+
+    // Set up WebSocket connection
+    const socket = io('http://127.0.0.1:5000');  // Replace with your backend URL
+    setSocket(socket);
+
+    socket.on('predicted_word', data => {
+      setPredictedWord(data.predicted_word);
+    });
+
+    return () => {
+      socket.close();
+    };
+  }, []);
+
+  const sendFrameForPrediction = () => {
+    const canvas = document.createElement('canvas');
+    canvas.width = videoRef.current.videoWidth;
+    canvas.height = videoRef.current.videoHeight;
+    canvas.getContext('2d').drawImage(videoRef.current, 0, 0);
+    const imageBlob = canvas.toDataURL('image/jpeg');
+
+    // Send frame data to the backend using WebSocket
+    socket.emit('send_frame', { image: imageBlob });
+  };
+
   return (
-    <Router >
-        <Drawer></Drawer>
-        <Routes>
-          <Route path="/" element={<Lobby/>}/>
-          <Route path="/room/:roomId" element={<Main userName={"subhamoy"}/>}/>
-          <Route path="/Guide" element={<Guide/>}/>
-        </Routes> 
-    </Router>
-  ); 
+    <div>
+      <h1>Video Call with Real-time ASL Gesture Prediction</h1>
+      <video ref={videoRef} autoPlay playsInline />
+      <button onClick={sendFrameForPrediction}>Predict Gesture</button>
+      <div>Predicted Word: {predictedWord}</div>
+    </div>
+  );
 }
 
 export default App;
