@@ -13,9 +13,10 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
 
 
 # Demo and proofs :
+  ## Live Demo: 
+   Visit https://globalvoice.el.r.appspot.com (deployed on GCP)
   ## GlobalVoice UI Demo :
    https://github.com/TeamUndefined2023/globalvoice/assets/93094139/1fc4e842-bd85-4df4-b622-719633fa1857
-
 
   ## ML Model Correctly prediction Hand gestures (American Sign Language (ASL)) with 99% Accuracy :
    Showing C for C (made with Hand Gestures)
@@ -37,6 +38,7 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
       WebRTC - Facilitating top-notch real-time audio and video interactions.
       TensorFlow - Elevating gesture recognition accuracy and responsiveness.
       Flask -  Backing our machine learning model integration for gesture recognition.
+      Google Cloud Platform - Deployed on the Google Cloud Platform
 
    # Team Members: 
       .Raja 
@@ -45,14 +47,17 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
       .Sinjini
 
 
-# to run in your local machine , install the dependencies in the respective directories:
+# Installation
+To run the app in your local machine, install the dependencies in the respective directories:
   # server:
-        npm i socket.io
+  ```
+  cd server
+  npm i
+  npm start
+  ```
   # Client:
-        npm i
-        npm install @auth0/auth0-react
-        npm i react-router-dom
-        npm i react-dom/client
-        npm i react-router-dom
-        npm i react-player
-        
+  ```
+  cd client
+  npm i
+  npm start
+  ```
