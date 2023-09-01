@@ -21,8 +21,21 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
   ## ML Model Correctly prediction Hand gestures (American Sign Language (ASL)) with 99% Accuracy :
    Showing C for C (made with Hand Gestures)
    ![WhatsApp Image 2023-08-28 at 08 54 22](https://github.com/TeamUndefined2023/globalvoice/assets/93094139/aaced96b-873f-46da-ac75-ad5e44183ddd)
+   ![poc](https://github.com/TeamUndefined2023/globalvoice/assets/57730879/a759d540-2634-41f6-916d-2bffa9dadd15)
+
+   
   ## Youtube Explanation of our Project :
     https://youtu.be/HRch__wnf_o?si=Az3jvHMeiCZTNBDV
+
+  ## Screenshots
+  ### The App
+  ![Screenshot (250)](https://github.com/TeamUndefined2023/globalvoice/assets/57730879/06b9ed0d-7799-4bca-88ad-a0a8198ac488)
+  ### Nodejs Websocket Backend deployment on Google Cloud Platform
+  ![Screenshot (249)](https://github.com/TeamUndefined2023/globalvoice/assets/57730879/8be81d44-e88f-4e69-8ccb-2a91ea23e435)
+  ### ReactJS Frontend deployment on Google Cloud Platform
+  ![Screenshot (251)](https://github.com/TeamUndefined2023/globalvoice/assets/57730879/065635c8-b05b-4f25-b182-48a70edaa4ef)
+
+    
 # Challenges We Ran Into 🔍🚧
     .Challenge : Our team faced difficulties in working with webRTC and socket.io , as these technologies were completely new to us and we have to read numerous documentations and go through many tutorials to                     implement it in our project
      Solution : Our problem solving ability helped us to solve bugs and resolves issues we developed till now , and to implement and made a fully functional video calling app
