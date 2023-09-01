@@ -31,8 +31,8 @@ function Drawercontent(props){
 function Exit(props){
   return (
     <div className="exit">
-    {/* <i class="fa-solid fa-circle-xmark fa-2xl icon"></i> */}
-    <LogoutButton/>
+    <i class="fa-solid fa-circle-xmark fa-2xl icon"></i>
+    {/* <LogoutButton/> */}
     </div>);
 }
 
