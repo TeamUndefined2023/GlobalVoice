@@ -41,6 +41,7 @@ const LobbyScreen = ({userEmail}) => {
           <input
             type="text"
             id="room"
+            className="userinp"
             value={room}
             onChange={(e) => setRoom(e.target.value)}
           />

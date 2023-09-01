@@ -1,37 +1,39 @@
 #bg_lobby {
     width: 91vw;
-    background:radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%);
+    /* background: radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%); */
+    background-image: url("../assets//lobby_bg.jpg");
+    background-repeat: no no-repeat;
+    background-size: cover;
     align-items: center;
     display: flex;
     flex-direction: column;
     height: 100vh;
     padding-top: 126px;
 }
-.box{
+.box {
     border-radius: 20px;
-    background-color: white; 
+    background-color: white;
     padding: 34px 67px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 9px 10px #8547d3; 
-
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.21);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-
-
+    box-shadow: 0px 0px 9px 10px #8547d3;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 63vh;
+    width: 30vw;
+    /* margin-left: 743px; */
 }
-#bg_lobby .box h1{
-    margin-bottom: 18px;
+#bg_lobby .box h1 {
+    margin-bottom: 36px;
     font-size: 61px;
     font-weight: bold;
-    color: #8547d3;
+    color: #000000;
 }
 #bg_lobby .box form{
     display: flex;
@@ -39,13 +41,21 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     justify-content: center;
     align-items: center;
 }
-.inp{
-    font-size: 15px;
+.inp {
+    font-size: 36px;
     font-weight: bold;
 }
-.btn_join{
-    padding: 5px 13px;
-    font-size: 17px;
+.box .userinp {
+    width: 20vw;
+    height: 5vh;
+    border-radius: 6px;
+    border: 1px solid white;
+    margin-top: 14px;
+    text-align: center;
+}
+.btn_join {
+    padding: 5px 45px;
+    font-size: 24px;
     color: white;
     background-color: #995ee3;
     border-radius: 8px;
