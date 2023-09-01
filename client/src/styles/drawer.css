@@ -1,13 +1,14 @@
-.drawer-main{
+.drawer-main {
     height: 100vh;
-    width: 12vw;
+    width: 9vw;
     background-color: #131391;
+    
 }
 .drawer-main .logo {
-    width: 12vw;
+    width: 4vw;
     height: 7vh;
     margin-top: 7px;
-    margin-left: 3px;
+    margin-left: 31px;
 }
 #name {
     text-transform: capitalize;
@@ -26,16 +27,17 @@
     display: flex;
     align-items: center;
 }
-.btn{
-    width: 12vw;
+.btn {
+    width: 9vw;
     display: flex;
-    height: 20vh;
+    height: 17vh;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    font-size: 15px;
 }
-.selectedBtn{
-    font-size: 28px;
+.selectedBtn {
+    font-size: 18px;
 }
 .selectedBtn .icon{
     color: #ffff;
@@ -55,7 +57,7 @@
 } */
 
 .selectedBtn .sideAnim{        
-    width: 15%;
+    width: 23%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -71,10 +73,12 @@
     height: 20%;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
 }
 .exit button{
     width: 40px;
     height: 40px;
+    
 }
 .exit .icon{
     margin-right: 30px;
