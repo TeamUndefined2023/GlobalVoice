@@ -16,7 +16,7 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
   ## Live Demo: 
    Visit https://globalvoice.el.r.appspot.com (deployed on GCP)
   ## GlobalVoice UI Demo :
-   https://github.com/TeamUndefined2023/globalvoice/assets/93094139/1fc4e842-bd85-4df4-b622-719633fa1857
+   https://github.com/TeamUndefined2023/globalvoice/assets/114691472/2a5a6780-82e1-47d9-8582-34aa0d9aa980
 
   ## ML Model Correctly prediction Hand gestures (American Sign Language (ASL)) with 99% Accuracy :
    Showing C for C (made with Hand Gestures)
