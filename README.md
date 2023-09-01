@@ -34,6 +34,7 @@ Crystal-Clear Video Quality: Immerse yourself in the conversation with high-defi
   ![Screenshot (249)](https://github.com/TeamUndefined2023/globalvoice/assets/57730879/8be81d44-e88f-4e69-8ccb-2a91ea23e435)
   ### ReactJS Frontend deployment on Google Cloud Platform
   ![Screenshot (251)](https://github.com/TeamUndefined2023/globalvoice/assets/57730879/065635c8-b05b-4f25-b182-48a70edaa4ef)
+![Screenshot (253)](https://github.com/TeamUndefined2023/globalvoice/assets/57730879/e4382c6d-0824-479c-a668-0186a4351205)
 
     
 # Challenges We Ran Into 🔍🚧
