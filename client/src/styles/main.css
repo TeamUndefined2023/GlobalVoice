@@ -1,6 +1,6 @@
 #bg{
     width: 91vw;
-    background:radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%);
+    background:rgb(160, 199, 255 , 1.0);;
     align-items: center;
     display: flex;
     flex-direction: column;
